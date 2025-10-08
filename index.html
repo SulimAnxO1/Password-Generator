@@ -3,36 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="JavaScript/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Password Generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Password Generator</h1>
-      <h3>Generate a secure password</h3>
-      <form>
-        <label for="characterAmountNumber">Number of Characters:</label>
-        <input
-          type="range"
-          id="characterAmountRange"
-          name="length"
-          min="8"
-          max="50"
-          value="10" />
-        <input
-          type="number"
-          id="characterAmountNumber"
-          name="length"
-          min="8"
-          max="50"
-          value="10" />
-        <label for="">Include Uppercase Letters</label>
-        <input type="checkbox" id="includeUppercase" />
-        <label for="">Include Numbers</label>
-        <input type="checkbox" id="includeNumbers" />
-        <label for="">Include Symbols</label>
-        <input type="checkbox" id="includeSymbols" />
-        <button type="submit">Generate Password</button>
+      <h1 class="title">Password Generator</h1>
+      <h3 class="password-display">Generate a secure password</h3>
+      <form class="form" id="passwordGeneratorForm">
+        <label for="characterAmountNumber">Number Of Characters</label>
+        <div class="character-amount-container">
+          <input
+            type="range"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountRange" />
+          <input
+            class="number-input"
+            type="number"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountNumber" />
+        </div>
+        <div class="options-container">
+          <div class="options">
+            <input type="checkbox" id="includeSymbols" />
+            <label for="includeSymbols">Include Symbols</label>
+          </div>
+          <div class="options">
+            <input type="checkbox" id="includeNumbers" />
+            <label for="includeNumbers">Include Numbers</label>
+          </div>
+          <div class="options">
+            <input type="checkbox" id="includeUppercase" />
+            <label for="includeUppercase">Include Uppercase Letters</label>
+          </div>
+        </div>
+        <div class="gif-container">
+          <video
+            src="./Image/dance-cat.mp4"
+            id="hoverGif"
+            alt="fun gif"
+            class="hover-gif behind-gif"
+            autoplay
+            loop
+            muted></video>
+          <video
+            src="/Image/dance-cat.mp4"
+            alt="fun gif"
+            class="decor-gif front-gif"
+            autoplay
+            loop
+            muted></video>
+        </div>
+        <button type="submit" class="btn">Generate Password</button>
       </form>
     </div>
+    <script src="/JavaScript/app.js"></script>
   </body>
 </html>
