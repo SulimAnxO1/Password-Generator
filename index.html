@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="JavaScript/script.js" defer></script>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="/JavaScript/script.js" defer></script>
+    <link rel="stylesheet" href="/CSS/style.css" />
     <title>Password Generator</title>
   </head>
   <body>
     <div class="container">
       <h1 class="title">Password Generator</h1>
-      <h3 class="password-display">Generate a secure password</h3>
+      <h3 class="password-display" id="passwordDisplay">
+        Generate a secure password
+      </h3>
       <form class="form" id="passwordGeneratorForm">
         <label for="characterAmountNumber">Number Of Characters</label>
         <div class="character-amount-container">
@@ -45,7 +47,7 @@
         </div>
         <div class="gif-container">
           <video
-            src="./Image/dance-cat.mp4"
+            src="/Image/dance-cat.mp4"
             id="hoverGif"
             alt="fun gif"
             class="hover-gif behind-gif"
