@@ -3,7 +3,7 @@
 A **modern password generator web app** built with **HTML, CSS, and JavaScript** that lets users easily generate secure, customizable passwords.  
 The app includes real-time length control, optional inclusion of uppercase, numbers, and symbols — with a fun animated cat 🐱 following your cursor for extra flair!
 
-🌐 **Live Demo:** [Password Generator](https://password-generator-69.netlify.app/)
+🌐 **Live Demo :** [Password Generator](https://password-generator-69.netlify.app/)
 
 ---
 
